@@ -1,0 +1,637 @@
+.section-title {
+  font-size: 26px;
+  font-weight: 700;
+  color: #1a1a1a;
+  margin-bottom: 24px;
+}
+
+.section-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 24px;
+}
+
+.coupon-section {
+  margin-top: 80px;
+}
+
+.coupon-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.coupon-card {
+  border-radius: 16px;
+  padding: 24px;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.07);
+}
+
+.coupon-card h3 {
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 8px;
+  color: #1a1a1a;
+}
+
+.coupon-discount {
+  font-size: 22px;
+  font-weight: 700;
+  color: #2f5cff;
+  margin-bottom: 16px;
+}
+
+.coupon-code {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: white;
+  border-radius: 8px;
+  padding: 10px 14px;
+  border: 1px dashed #aaa;
+}
+
+.coupon-code span {
+  font-weight: 600;
+  letter-spacing: 1px;
+  font-size: 14px;
+}
+
+.coupon-code button {
+  border: none;
+  background: #2f5cff;
+  color: white;
+  padding: 6px 14px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 13px;
+}
+
+.banner-section {
+  margin-top: 60px;
+}
+
+.banner-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  height: 380px;
+}
+
+.banner-large,
+.banner-small {
+  border-radius: 18px;
+  overflow: hidden;
+  position: relative;
+  cursor: pointer;
+}
+
+.banner-large img,
+.banner-small img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s;
+}
+
+.banner-large:hover img,
+.banner-small:hover img {
+  transform: scale(1.04);
+}
+
+.banner-small-col {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.banner-small {
+  flex: 1;
+}
+
+.banner-text {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 20px;
+  background: linear-gradient(transparent, rgba(0, 0, 0, 0.6));
+  color: white;
+}
+
+.banner-text h3 {
+  font-size: 22px;
+  font-weight: 700;
+}
+
+.banner-text p {
+  font-size: 14px;
+  margin-top: 4px;
+}
+
+.dest-section {
+  margin-top: 60px;
+}
+
+.slider-arrows {
+  display: flex;
+  gap: 10px;
+}
+
+.slider-arrows button {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 1px solid #ddd;
+  background: white;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+  transition: background 0.2s;
+}
+
+.slider-arrows button:hover {
+  background: #2f5cff;
+  color: white;
+  border-color: #2f5cff;
+}
+
+.dest-slider {
+  display: flex;
+  gap: 20px;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  padding-bottom: 10px;
+  scrollbar-width: none;
+}
+
+.dest-slider::-webkit-scrollbar {
+  display: none;
+}
+
+.dest-card {
+  min-width: 200px;
+  border-radius: 16px;
+  overflow: hidden;
+  background: white;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
+  cursor: pointer;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.dest-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+}
+
+.dest-card img {
+  width: 100%;
+  height: 140px;
+  object-fit: cover;
+}
+
+.dest-info {
+  padding: 14px;
+}
+
+.dest-info h4 {
+  font-size: 16px;
+  font-weight: 700;
+  color: #1a1a1a;
+}
+
+.dest-info p {
+  font-size: 13px;
+  color: #888;
+  margin-top: 4px;
+}
+
+.places-section {
+  margin-top: 60px;
+}
+
+.places-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
+}
+
+.place-card {
+  background: white;
+  border-radius: 18px;
+  overflow: hidden;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
+  cursor: pointer;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.place-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.13);
+}
+
+.place-img-wrap {
+  height: 200px;
+  overflow: hidden;
+}
+
+.place-img-wrap img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s;
+}
+
+.place-card:hover .place-img-wrap img {
+  transform: scale(1.05);
+}
+
+.place-info {
+  padding: 16px;
+}
+
+.place-info h4 {
+  font-size: 17px;
+  font-weight: 700;
+  color: #1a1a1a;
+}
+
+.place-city {
+  font-size: 13px;
+  color: #888;
+  margin-top: 4px;
+}
+
+.place-rating {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  margin-top: 10px;
+  font-size: 14px;
+}
+
+.place-reviews {
+  color: #aaa;
+  font-size: 12px;
+}
+
+.place-price {
+  margin-top: 10px;
+  font-size: 14px;
+  color: #555;
+}
+
+.place-price strong {
+  font-size: 18px;
+  color: #2f5cff;
+}
+
+.moments-section {
+  margin-top: 60px;
+}
+
+.moments-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.moment-card {
+  border-radius: 18px;
+  overflow: hidden;
+  position: relative;
+  height: 260px;
+  cursor: pointer;
+}
+
+.moment-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s;
+}
+
+.moment-card:hover img {
+  transform: scale(1.05);
+}
+
+.moment-overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 16px 20px;
+  background: linear-gradient(transparent, rgba(0, 0, 0, 0.65));
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.moment-user {
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.moment-location {
+  font-size: 12px;
+  opacity: 0.85;
+  margin-top: 2px;
+}
+
+.moment-likes {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 14px;
+}
+
+.hotels-section {
+  margin-top: 60px;
+}
+
+.hotels-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
+}
+
+.hotel-card {
+  background: white;
+  border-radius: 18px;
+  overflow: hidden;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
+  cursor: pointer;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.hotel-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.13);
+}
+
+.hotel-img-wrap {
+  height: 200px;
+  overflow: hidden;
+  position: relative;
+}
+
+.hotel-img-wrap img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s;
+}
+
+.hotel-card:hover .hotel-img-wrap img {
+  transform: scale(1.05);
+}
+
+.hotel-stars {
+  position: absolute;
+  bottom: 10px;
+  left: 12px;
+  color: #f5a623;
+  font-size: 13px;
+  letter-spacing: 2px;
+}
+
+.hotel-info {
+  padding: 16px;
+}
+
+.hotel-info h4 {
+  font-size: 16px;
+  font-weight: 700;
+  color: #1a1a1a;
+}
+
+.hotel-city {
+  font-size: 13px;
+  color: #888;
+  margin-top: 4px;
+}
+
+.hotel-rating {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 10px;
+}
+
+.rating-badge {
+  background: #2f5cff;
+  color: white;
+  padding: 4px 10px;
+  border-radius: 6px;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.hotel-reviews {
+  font-size: 12px;
+  color: #aaa;
+}
+
+.hotel-price {
+  margin-top: 10px;
+  font-size: 14px;
+  color: #555;
+}
+
+.hotel-price strong {
+  font-size: 20px;
+  color: #1a1a1a;
+}
+
+.hotel-price span {
+  font-size: 12px;
+  color: #aaa;
+}
+
+.book-btn {
+  width: 100%;
+  margin-top: 14px;
+  padding: 12px;
+  background: #2f5cff;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  font-size: 15px;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.book-btn:hover {
+  background: #1a45e0;
+}
+
+.app-banner-section {
+  margin-top: 60px;
+}
+
+.app-banner {
+  background: linear-gradient(135deg, #2f5cff, #1a45e0);
+  border-radius: 24px;
+  padding: 50px 60px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: white;
+  overflow: hidden;
+}
+
+.app-banner-text h2 {
+  font-size: 36px;
+  font-weight: 700;
+  margin-bottom: 14px;
+}
+
+.app-banner-text p {
+  font-size: 16px;
+  opacity: 0.9;
+  max-width: 420px;
+  line-height: 1.6;
+  margin-bottom: 28px;
+}
+
+.app-buttons {
+  display: flex;
+  gap: 16px;
+}
+
+.app-btn {
+  padding: 14px 28px;
+  border-radius: 10px;
+  border: 2px solid white;
+  background: transparent;
+  color: white;
+  font-size: 15px;
+  cursor: pointer;
+  transition: background 0.2s, color 0.2s;
+}
+
+.app-btn:hover {
+  background: white;
+  color: #2f5cff;
+}
+
+.app-banner-img {
+  width: 280px;
+  height: 200px;
+  border-radius: 16px;
+  overflow: hidden;
+}
+
+.app-banner-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.rec-section {
+  margin-top: 60px;
+}
+
+.rec-tabs {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 28px;
+}
+
+.rec-tab {
+  padding: 10px 28px;
+  border-radius: 40px;
+  border: 1px solid #ddd;
+  background: white;
+  font-size: 15px;
+  cursor: pointer;
+  color: #555;
+  transition: all 0.2s;
+}
+
+.rec-tab.active {
+  background: #2f5cff;
+  color: white;
+  border-color: #2f5cff;
+}
+
+.rec-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
+}
+
+.rec-card {
+  background: white;
+  border-radius: 18px;
+  overflow: hidden;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
+  cursor: pointer;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.rec-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.13);
+}
+
+.rec-img-wrap {
+  height: 180px;
+  overflow: hidden;
+  position: relative;
+}
+
+.rec-img-wrap img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s;
+}
+
+.rec-card:hover .rec-img-wrap img {
+  transform: scale(1.05);
+}
+
+.rec-type {
+  position: absolute;
+  top: 12px;
+  left: 12px;
+  background: rgba(0, 0, 0, 0.55);
+  color: white;
+  padding: 4px 10px;
+  border-radius: 20px;
+  font-size: 12px;
+}
+
+.rec-info {
+  padding: 14px;
+}
+
+.rec-info h4 {
+  font-size: 15px;
+  font-weight: 700;
+  color: #1a1a1a;
+}
+
+.rec-rating {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  margin-top: 8px;
+  font-size: 14px;
+}
+
+.rec-price {
+  margin-top: 8px;
+  font-size: 14px;
+  color: #555;
+}
+
+.rec-price strong {
+  font-size: 17px;
+  color: #2f5cff;
+}

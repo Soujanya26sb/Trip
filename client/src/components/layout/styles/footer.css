@@ -1,0 +1,52 @@
+.slim-centered-footer {
+  width: 100%;
+  background-color: #0f141c;
+  padding: 16px 20px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-family: system-ui, -apple-system, sans-serif;
+  border-top: 1px solid #1a202c;
+}
+
+.footer-info-stack {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  max-width: 700px;
+  gap: 6px;
+}
+
+.footer-logo-text {
+  color: #ffffff;
+  font-size: 1.25rem;
+  font-weight: 800;
+  letter-spacing: -0.3px;
+  margin: 0;
+}
+
+.footer-trip-paragraph {
+  color: #8a99ad;
+  font-size: 0.85rem;
+  line-height: 1.4;
+  margin: 0;
+  max-width: 600px;
+}
+
+.footer-email-link {
+  color: #3182ce;
+  text-decoration: none;
+  font-size: 0.8rem;
+  font-weight: 600;
+  letter-spacing: 0.3px;
+  transition: color 0.2s ease;
+  margin-top: 2px;
+}
+
+.footer-email-link:hover {
+  color: #63b3ed;
+  text-decoration: underline;
+}

@@ -1,0 +1,291 @@
+.flight-hotel-root {
+  padding: 30px 24px;
+  background-color: #f8fafc;
+  min-height: 100vh;
+  font-family: Inter, system-ui, sans-serif;
+  position: relative;
+}
+.flight-hotel-header {
+  margin-bottom: 24px;
+}
+.flight-hotel-layout {
+  display: grid;
+  grid-template-columns: 280px 1fr;
+  gap: 24px;
+  align-items: start;
+}
+.flight-hotel-sidebar {
+  background: #ffffff;
+  padding: 24px;
+  border-radius: 16px;
+  border: 1px solid #e2e8f0;
+}
+.flight-hotel-filter-heading {
+  font-size: 15px;
+  font-weight: 700;
+  color: #0f172a;
+  margin-bottom: 16px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.flight-hotel-filter-group,
+.flight-hotel-sidebar-divider {
+  margin-bottom: 20px;
+}
+.flight-hotel-filter-label {
+  font-size: 11px;
+  font-weight: 700;
+  color: #64748b;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+.flight-hotel-radio-label {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 8px;
+  font-size: 13px;
+  color: #334155;
+  cursor: pointer;
+}
+.flight-hotel-radio-input {
+  accent-color: #0066cc;
+}
+.flight-hotel-range-input {
+  width: 100%;
+  accent-color: #0066cc;
+}
+.flight-hotel-range-meta {
+  display: flex;
+  justify-content: space-between;
+  font-size: 12px;
+  margin-top: 4px;
+  color: #64748b;
+}
+.flight-hotel-range-value {
+  font-weight: 700;
+  color: #0066cc;
+}
+.flight-hotel-main {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
+  gap: 24px;
+}
+.bundle-card {
+  background: #ffffff;
+  border-radius: 16px;
+  overflow: hidden;
+  border: 1px solid #e2e8f0;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.02);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.bundle-image {
+  position: relative;
+  height: 170px;
+}
+.bundle-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.bundle-badge {
+  position: absolute;
+  bottom: 12px;
+  left: 12px;
+  background: #0066cc;
+  color: #fff;
+  font-size: 11px;
+  padding: 4px 10px;
+  border-radius: 6px;
+  font-weight: 700;
+}
+.bundle-rating {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  background: rgba(255, 255, 255, 0.95);
+  color: #0f172a;
+  font-size: 11px;
+  padding: 2px 6px;
+  border-radius: 4px;
+  font-weight: 700;
+}
+.bundle-content {
+  padding: 16px;
+}
+.bundle-title {
+  font-size: 15px;
+  font-weight: 800;
+  color: #0f172a;
+  margin: 0 0 12px 0;
+  line-height: 1.4;
+}
+.bundle-details {
+  background: #f8fafc;
+  padding: 10px 14px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+.bundle-detail-item {
+  font-size: 12px;
+  color: #475569;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+.bundle-detail-icon {
+  color: #0066cc;
+}
+.bundle-deal-pill {
+  color: #16a34a;
+  font-size: 11px;
+  font-weight: 600;
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+}
+.bundle-price-row {
+  padding: 0 16px 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.bundle-price {
+  color: #16a34a;
+  font-size: 18px;
+  font-weight: 800;
+}
+.bundle-btn {
+  background: #0066cc;
+  color: #fff;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 8px;
+  font-weight: 700;
+  font-size: 12px;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+.flight-hotel-modal-backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(15, 23, 42, 0.7);
+  backdrop-filter: blur(4px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  padding: 20px;
+}
+.flight-hotel-modal {
+  background-color: #ffffff;
+  padding: 32px;
+  border-radius: 20px;
+  max-width: 440px;
+  width: 90%;
+  text-align: center;
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
+}
+.flight-hotel-title {
+  font-size: 26px;
+  font-weight: 800;
+  color: #0f172a;
+  margin-top: 4px;
+}
+.flight-hotel-back-link {
+  cursor: pointer;
+  color: #0066cc;
+  font-weight: 600;
+  font-size: 13px;
+  display: inline-block;
+  margin-bottom: 10px;
+}
+.flight-hotel-modal .spinner-loader {
+  font-size: 40px;
+  color: #0066cc;
+  margin-bottom: 20px;
+}
+.flight-hotel-note {
+  margin-top: 20px;
+  font-size: 12px;
+  color: #94a3b8;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+}
+.flight-hotel-success-copy {
+  font-size: 13px;
+  color: #16a34a;
+  font-weight: 700;
+  margin-bottom: 16px;
+}
+.flight-hotel-success-card {
+  text-align: left;
+  background-color: #f8fafc;
+  padding: 14px;
+  border-radius: 12px;
+  border: 1px solid #e2e8f0;
+  margin-bottom: 24px;
+  font-size: 13px;
+}
+.flight-hotel-success-row {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  margin-bottom: 8px;
+}
+.flight-hotel-success-row strong {
+  color: #0f172a;
+}
+.flight-hotel-success-label {
+  font-weight: 700;
+  color: #0f172a;
+}
+.flight-hotel-success-icon {
+  font-size: 28px;
+  color: #16a34a;
+}
+.flight-hotel-modal p {
+  font-size: 14px;
+  color: #475569;
+  line-height: 1.5;
+}
+.flight-hotel-modal .confirm-button {
+  background: #0f172a;
+  color: #fff;
+  width: 100%;
+  padding: 12px;
+  border: none;
+  border-radius: 10px;
+  font-size: 14px;
+  font-weight: 700;
+  cursor: pointer;
+  margin-bottom: 10px;
+}
+.flight-hotel-modal .secondary-button {
+  background: #f1f5f9;
+  color: #475569;
+  border: none;
+  padding: 12px;
+  border-radius: 10px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+}
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}

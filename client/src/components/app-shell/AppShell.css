@@ -1,0 +1,60 @@
+.main-layout-root {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.main-body-split {
+  display: flex;
+  flex: 1;
+  width: 100%;
+}
+
+.main-body-split > aside,
+.main-body-split .sidebar-container-selector {
+  width: 232px !important;
+  flex-shrink: 0;
+}
+
+.content-area-pane {
+  flex: 1;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  background-color: #f8f9fa;
+}
+
+.hero-row-wrapper {
+  width: 100%;
+  display: block;
+}
+
+.section-row-wrapper {
+  width: 100%;
+  margin-top: 48px;
+  padding: 0 24px;
+  box-sizing: border-box;
+  display: block;
+  clear: both;
+}
+
+.sc-search-btn,
+.search-submit-action,
+button[class*="login"],
+button[class*="signup"],
+a[href*="login"],
+a[href*="signup"] {
+  background-color: #3563ff !important;
+  border-color: #3563ff !important;
+}
+
+nav button,
+header button,
+.navbar-user-actions,
+.auth-buttons-wrapper {
+  display: none !important;
+}
+
+.custom-premium-navbar .navbar-logout-button {
+  display: inline-flex !important;
+}

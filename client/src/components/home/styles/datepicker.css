@@ -1,0 +1,30 @@
+.trip-calendar-popper {
+  z-index: 9999 !important;
+}
+
+.trip-calendar {
+  border: none !important;
+  border-radius: 14px !important;
+  padding: 14px !important;
+  width: 360px !important;
+  box-shadow: 0 12px 35px rgba(0,0,0,0.18);
+  font-family: inherit;
+}
+
+.react-datepicker {
+  border: none !important;
+  width: 100% !important;
+}
+
+.react-datepicker__month-container {
+  width: 100% !important;
+  max-width: 340px;
+  padding: 0 !important;
+  background: transparent !important;
+}
+
+.react-datepicker__month {
+  width: 100% !important;
+  margin: 0 auto !important;
+  background: transparent !important;
+}
