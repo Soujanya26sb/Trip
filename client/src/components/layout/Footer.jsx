@@ -12,7 +12,7 @@ export default function Footer() {
         {/* 1. Logo Name */}
         <h3 className="footer-logo-text">Ethereal Escapes</h3>
 
-        {/* 2. 2-line trip description paragraph */}
+       
         <p className="footer-trip-paragraph">
           Your trusted global travel partner for effortlessly booking luxury hotels, budget flights, and unforgettable getaways. Explore the wonders of nature and organize your next dream destination with absolute ease.
         </p>

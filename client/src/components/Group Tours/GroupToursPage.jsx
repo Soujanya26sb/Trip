@@ -100,7 +100,7 @@ export default function GroupToursPage({ onBackToHome }) {
   const [groupTours, setGroupTours] = useState([]);
   const [loading, setLoading] = useState(true);
 
-  // Fix Event Handler: Added event listener to successfully catch the gateway checkout dispatch logic
+  
 
   const handleNextImg = (e, id, max) => {
     e.stopPropagation();

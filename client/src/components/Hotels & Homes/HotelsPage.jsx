@@ -251,7 +251,7 @@ export default function HotelsPage({ onBackToHome }) {
                       <button onClick={(e) => handlePrevImg(e, hotel.id, hotel.images.length)} className="hotel-carousel-button left"><FaChevronLeft size={10} /></button>
                       <button onClick={(e) => handleNextImg(e, hotel.id, hotel.images.length)} className="hotel-carousel-button right"><FaChevronRight size={10} /></button>
                       
-                      {/* Interactive slide tracker dots */}
+                   
                       <div className="hotel-carousel-dots">
                         {hotel.images.map((_, i) => (
                           <div key={i} className={"hotel-carousel-dot" + (i === currentImgIdx ? ' active' : '')} />
@@ -298,7 +298,7 @@ export default function HotelsPage({ onBackToHome }) {
         <div className="modal-overlay">
           <div className="modal-container">
             
-            {/* Modal Header */}
+         
             <div className="modal-header">
               <div className="modal-header-row">
                 <FaLock color="#16a34a" />
@@ -307,7 +307,7 @@ export default function HotelsPage({ onBackToHome }) {
               <button onClick={() => setSelectedPaymentHotel(null)} className="modal-close-button"><FaTimes size={18} /></button>
             </div>
 
-            {/* Modal Body Content */}
+          
             {!paymentSuccess ? (
               <form onSubmit={handlePaymentSubmit} className="modal-content">
                 {/* Summary Box */}
@@ -328,7 +328,7 @@ export default function HotelsPage({ onBackToHome }) {
                   </div>
                 </div>
 
-                {/* Mock Card Form Fields */}
+               
                 <div className="modal-field">
                   <label>Cardholder Name</label>
                   <input required type="text" placeholder="John Doe" className="modal-input" />

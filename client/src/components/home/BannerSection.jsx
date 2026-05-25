@@ -85,10 +85,10 @@ export default function BannerSection() {
         }
       `}</style>
 
-      {/* Grid wrapper forcing 3 items per row */}
+   
       <div className="banners-grid-wrapper">
         
-        {/* Banner 1 - Updated to use local public/1.jpg */}
+      
         <div 
           className="promo-banner-card" 
           style={{ backgroundImage: "url('/1.jpg')" }}
@@ -99,7 +99,7 @@ export default function BannerSection() {
           </div>
         </div>
         
-        {/* Banner 2 - Updated to use local public/2.jpg */}
+      
         <div 
           className="promo-banner-card" 
           style={{ backgroundImage: "url('/2.jpg')" }}
@@ -110,7 +110,7 @@ export default function BannerSection() {
           </div>
         </div>
 
-        {/* Banner 3 - Keeps your mountain placeholder network image */}
+       
         <div 
           className="promo-banner-card" 
           style={{ backgroundImage: "url('https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?q=80&w=800')" }}

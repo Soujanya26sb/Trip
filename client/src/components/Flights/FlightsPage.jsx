@@ -21,7 +21,7 @@ export default function FlightsPage({ onBackToHome }) {
   // Payment states
   const [activeCheckoutFlight, setActiveCheckoutFlight] = useState(null);
   const [isProcessingPayment, setIsProcessingPayment] = useState(false);
-  const [paymentStep, setPaymentStep] = useState('form'); // 'form' | 'success'
+  const [paymentStep, setPaymentStep] = useState('form'); 
   const [cardNumber, setCardNumber] = useState('');
   const [cardExpiry, setCardExpiry] = useState('');
   const [cardCvv, setCardCvv] = useState('');
@@ -109,7 +109,7 @@ export default function FlightsPage({ onBackToHome }) {
 
       <div className="flights-layout">
         
-        {/* COMPREHENSIVE FLIGHT SIDEBAR SUITE */}
+        
         <aside className="flights-sidebar">
           <h3 className="flights-filter-heading"><FaFilter /> Refine Flight Fleet</h3>
           
@@ -202,7 +202,7 @@ export default function FlightsPage({ onBackToHome }) {
         </main>
       </div>
 
-      {/* FULL SCREEN SECURE CHECKOUT & PAYMENT MODAL OVERLAY */}
+      {/* FULL SCREEN SECURE CHECKOUT & PAYMENT MODAL*/}
       {activeCheckoutFlight && (
         <div className="flight-modal-wrapper">
           <div className="flight-modal">
@@ -233,7 +233,7 @@ export default function FlightsPage({ onBackToHome }) {
                   </div>
                 </div>
 
-                {/* Pricing Fare Matrix Breakdown */}
+               
                 <div className="flight-modal-pricing">
                   <div className="flight-modal-pricing-row">
                     <span>Base Ticket Fare</span>
@@ -249,7 +249,7 @@ export default function FlightsPage({ onBackToHome }) {
                   </div>
                 </div>
 
-                {/* Mock Card Credentials Form Inputs */}
+       
                 <div className="flight-modal-field">
                   <label>Cardholder Number</label>
                   <div className="flight-modal-input-group">

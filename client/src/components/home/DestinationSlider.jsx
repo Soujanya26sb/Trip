@@ -3,7 +3,7 @@
 import React from 'react'
 
 export default function DestinationSlider() {
-  // Temporary structured mock array based on your layout image assets
+  
   const destinations = [
     { id: 1, city: 'Tokyo', country: 'Japan', img: '/3.jpg' },
     { id: 2, city: 'Paris', country: 'France', img: 'https://images.unsplash.com/photo-1502602898657-3e91760cbb34?q=80&w=600' },
@@ -121,7 +121,7 @@ export default function DestinationSlider() {
         }
       `}</style>
 
-      {/* Top Banner Row Layout Block */}
+  
       <div className="featured-banners-grid">
         <div className="hero-banner-card" style={{ backgroundImage: `url('https://images.unsplash.com/photo-1507525428034-b723cf961d3e?q=80&w=800')` }}>
           <div className="banner-content-text">
@@ -138,7 +138,7 @@ export default function DestinationSlider() {
         </div>
       </div>
 
-      {/* Separated Bottom Row Layout Block: Displays 4 in 1 Row Symmetrically */}
+      
       <div className="cities-row-grid">
         {destinations.map((dest) => (
           <div className="city-thumbnail-card" key={dest.id}>

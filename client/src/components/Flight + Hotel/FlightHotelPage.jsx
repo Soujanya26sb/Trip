@@ -18,7 +18,7 @@ export default function FlightHotelPage({ onBackToHome }) {
   
   // Payment Gate States
   const [selectedPkg, setSelectedPkg] = useState(null);
-  const [paymentStatus, setPaymentStatus] = useState('idle'); // 'idle' | 'processing' | 'success'
+  const [paymentStatus, setPaymentStatus] = useState('idle'); 
 
   const filteredBundles = bundlePackages.filter(p => {
     return (themeType === 'All' || p.type === themeType) && p.salePrice <= maxBudget;

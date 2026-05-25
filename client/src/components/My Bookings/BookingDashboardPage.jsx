@@ -25,7 +25,7 @@ export default function BookingDashboardPage({ onBackToHome }) {
       } catch (err) {
         console.error('Failed capturing active booking array lists:', err)
         
-        // Mock static data fallback if backend is offline
+       
         setBookings([
           {
             _id: 'ETH78291a',

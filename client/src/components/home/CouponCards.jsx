@@ -179,14 +179,14 @@ export default function CouponCards() {
         <p>Apply these promo codes at checkout to unlock massive savings on your next itinerary.</p>
       </div>
 
-      {/* Responsive Grid Layout */}
+    
       <div className="coupon-grid">
         {coupons.map((c) => {
           const theme = getThemeColors(c.title)
           return (
             <div className="custom-ticket" key={c.id}>
               <div>
-                {/* Dynamic Icon Avatar Box */}
+                
                 <div className="icon-badge" style={{ backgroundColor: theme.bg }}>
                   {theme.icon}
                 </div>
@@ -194,7 +194,7 @@ export default function CouponCards() {
                 <h3 className="ticket-discount">{c.discount}</h3>
               </div>
               
-              {/* Promo Key Actions Footer */}
+            
               <div className="coupon-box">
                 <span className="coupon-code-text">{c.code}</span>
                 <button 

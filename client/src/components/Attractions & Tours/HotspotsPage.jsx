@@ -116,7 +116,7 @@ export default function HotspotsPage({ onBackToHome }) {
   const [selectedSpot, setSelectedSpot] = useState(attractionsData[0])
   const [searchQuery, setSearchQuery] = useState('')
 
-  // Q5 FIX: Dynamic Payment Module Checkout Trigger Simulation
+  //Dynamic Payment Module Checkout Trigger Simulation
   const handlePaymentCheckout = async (spot) => {
   try {
     await createBooking({

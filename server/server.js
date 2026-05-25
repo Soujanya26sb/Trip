@@ -55,7 +55,7 @@ app.use(cors(corsOptions))
 app.use(express.json())
 app.use('/api/bookings', bookingRoutes);
 
-// Mount Sub-Route Files Here
+
 app.use('/api/auth', require('./routes/auth'))
 
 app.get('/api/health', (req, res) => {

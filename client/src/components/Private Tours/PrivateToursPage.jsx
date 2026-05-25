@@ -100,7 +100,7 @@ export default function PrivateToursPage({ onBackToHome }) {
     setImgIndexes(prev => ({ ...prev, [id]: ((prev[id] || 0) - 1 + max) % max }));
   };
 
-  // Mock Payment & Checkout Processor Function
+  // Payment & Checkout Processor Function
   const handleBooking = async (tour) => {
     setBookingStatus({ loading: true, success: false, currentTour: tour });
     

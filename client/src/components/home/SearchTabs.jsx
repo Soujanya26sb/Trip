@@ -226,7 +226,7 @@ export default function SearchTabs() {
         ))}
       </div>
 
-      {/* WHITE PANEL */}
+     
       <div className="sc-panel">
 
         {/* HOTELS */}
@@ -403,7 +403,7 @@ export default function SearchTabs() {
 
                 <div className="sc-sep" />
 
-                {/* Dates Configuration (17/05/2026 — 19/05/2026) */}
+               
                 <div 
                   className="flight-date-box" 
                   style={{ position: 'relative', flex: '1.2', padding: '10px 16px', display: 'flex', alignItems: 'center', justifyContent: 'space-between', border: 'none', gap: '4px' }}
@@ -440,7 +440,7 @@ export default function SearchTabs() {
 
                 <div className="sc-sep" />
 
-                {/* Cabin Class and Travelers (1 adult · Economy) */}
+              
                 <div
                   className="flight-travelers"
                   style={{ position: 'relative', flex: '1.2', padding: '10px 16px', border: 'none', background: 'transparent', width: 'auto', justifyContent: 'space-between' }}

@@ -33,7 +33,7 @@ const carFleet = [
     pricePerDay: 1950,
     oldPrice: 2800,
     images: [
-      "/18.jpg", // This will now point correctly to your public/1.jpg
+      "/18.jpg", 
       "/19.jpg",
       "/20.jpg"
     ],
